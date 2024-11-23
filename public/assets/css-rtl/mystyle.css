@@ -1,0 +1,158 @@
+/*
+public style
+===================
+*/
+
+.rtl {
+    direction: rtl;
+}
+
+.form-label {
+    font-size: 1rem;
+}
+.choose-upload {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.answer-field {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.answer-field button {
+    width: 100px;
+}
+/*
+logo 
+======================
+*/
+.logo {
+    width: 200px;
+    height: auto;
+}
+.logo img {
+    width: 100%;
+}
+
+/*
+exam card
+======================
+*/
+
+.card-image img {
+    height: 300px;
+}
+
+.AllExam img {
+    width: 100%;
+}
+.AllExam .page-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--bs-primary);
+    padding: 10px 15px;
+    margin-bottom: 1rem
+}
+.AllExam .card {
+    height: 100%;
+}
+.exam-time {
+    margin-top: 1rem;
+}
+
+.img_preview {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.img_preview .editPic {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.img_preview .editPic input {
+    opacity: 0;
+    position: relative;
+    bottom: 20px;
+}
+.img_preview .editPic span {
+    width: 100%;
+    display: block;
+    background-color: #2196F3;
+    position: relative;
+    bottom: -38px;
+    padding: 10px;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.img_preview .editPic:hover span {
+    opacity: 1;
+}
+
+/* bubble design */
+.bubble {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('../images/bubble.png') no-repeat center;
+    background-size: cover;
+    border-radius: 50%; /* شكل دائري */
+    animation: float 10s infinite ease-in-out;
+  }
+  
+  /* توزيع الفقاعات عشوائياً */
+  .bubble:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-duration: 5s;
+  }
+  .bubble:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    animation-duration: 8s;
+  }
+  .bubble:nth-child(3) {
+    top: 80%;
+    left: 30%;
+    animation-duration: 10s;
+  }
+  
+  /* حركة الفقاعات */
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-100px) scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(-200px) scale(1);
+      opacity: 0;
+    }
+  }
+
+.auth-wrapper .card {
+    background-color: transparent;
+}
+.auth-wrapper .logo_img {
+    text-align: center;
+}
+.auth-wrapper .logo_img img {
+    width: 200px;
+}
+.auth-wrapper a {
+    color: #fff;
+}
+.auth-wrapper .form-label {
+    font-size: 1rem;
+    color: #fff;
+}
